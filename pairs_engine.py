@@ -226,3 +226,4 @@ class RiskManager:
 
     def can_open_position(self, open_positions: int) -> bool:
         return not self.circuit_breaker_active and open_positions < self.max_pairs
+    
